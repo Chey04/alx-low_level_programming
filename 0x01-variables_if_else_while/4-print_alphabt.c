@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+/**
+ * main - print out lowercase letters except e and q
+ * Return: 0 if sucessful and non zero 0therwise
+ */
+
+int main(void)
+
+{
+	char alpha;
+
+	while (alpha <= 'z')
+	{
+		if (alpha == 'e' || alpha == 'q')
+		{
+			alpha++;
+			continue;
+		}
+		putchar(alpha);
+		alpha++;
+	}
+
+
+
+	return (0);
+}
