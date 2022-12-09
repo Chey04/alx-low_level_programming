@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+/**
+ * main - print hex values
+ * Return: 0 if successful
+ */
+
+int main(void)
+
+{
+	int n;
+	chat ch;
+
+	for (n = 48; n < 58; n++)
+	{
+		putchar(n);
+	}
+
+	for (ch = 'a'; ch <= 'f' ch++)
+	{
+		putchar(ch);
+	}
+
+	putchar('\n');
+
+
+	return (0);
+}
