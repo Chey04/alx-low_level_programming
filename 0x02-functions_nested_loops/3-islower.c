@@ -5,13 +5,13 @@
  * is a lowercase alphabet
  *
  * Return: 0 if false and 1 if correct
- */ 
+ */
 
 
 
-int _islower(int c)
+int _islower(int)
 {
-
+	int c;
 
 	if ((c <= 'a') || (c >= 'z'))
 		return (0);
