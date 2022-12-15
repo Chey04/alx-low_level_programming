@@ -18,7 +18,7 @@ void print_line(int n)
 		{
 			_putchar('\n');
 		}
-		else if
+		else
 		{
 			_putchar(m);
 		}
