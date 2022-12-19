@@ -1,6 +1,7 @@
 #include "main.h"
 
-/* reset_to_98 - updates the value at pointer destination
+/**
+ * reset_to_98 - updates the value at pointer destination
  * @n: pointer to be updated
  */
 
