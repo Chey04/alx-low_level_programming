@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * -puts - outputs a string followed by new line
+ * _puts - outputs a string followed by new line
  *  to stdout
  *  @str: addredd of str to be output
  */
