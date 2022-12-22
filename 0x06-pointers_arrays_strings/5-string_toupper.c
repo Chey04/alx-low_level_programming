@@ -7,11 +7,14 @@
 
 char *string_toupper(char *)
 {
-	for (; *s; s++)
+	int i;
+
+	while (s[i] != '\0')
 	{
-		if (('a' <= *s) && (*s <= 'z'))
-			return (*s = 'A' + (*s - 'a'));
-		else
-			return (s);
+		if (s[i] >= 97 && s[i] <= 122
+			s[i] -= 32;
+			i++;
+
 	}
+	return (s);
 }
