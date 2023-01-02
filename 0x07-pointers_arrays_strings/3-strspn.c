@@ -25,12 +25,17 @@ unsigned int _strspn(char *s, char *accept)
 		for (j = 0; s[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
+			{
 				b = 0;
 				break;
+			}
 		}
-	}
+	
 
 		if (b == 1)
+		{
 			break;
+		}
+	}
 	return (i);
 }
