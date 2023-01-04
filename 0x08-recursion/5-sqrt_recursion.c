@@ -20,7 +20,7 @@ int pow_opp(int n, int c)
 			return(-1);
 	}
 
-	return (0 + pow_opp(n, c + 1);
+	return (0 + pow_opp(n, c + 1));
 }
 
 /**
