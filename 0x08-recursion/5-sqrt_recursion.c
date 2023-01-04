@@ -14,10 +14,10 @@ int pow_opp(int n, int c)
 {
 	if (c % (n / c) == 0)
 	{
-		if ( c * (n / c) == n)
+		if (c * (n / c) == n)
 			return (c);
 		else
-			return(-1);
+			return (-1);
 	}
 
 	return (0 + pow_opp(n, c + 1));
@@ -28,7 +28,7 @@ int pow_opp(int n, int c)
  *
  * @n: input value
  *
- * Return: square root 
+ * Return: square root
  */
 
 int _sqrt_recursion(int n)
