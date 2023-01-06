@@ -9,7 +9,7 @@
  * Return: 0 or 1 for error
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int i, add = 0;
 
@@ -27,4 +27,6 @@ int main(int argc, char* argv[])
 	}
 
 	printf("%d\n", add);
+
+	return (0);
 }

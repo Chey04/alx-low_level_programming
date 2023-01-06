@@ -8,13 +8,13 @@
  * Return: 0 for success 1 otherwise
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int mul = 0, a, b;
 
 	if (argc < 3)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
 
