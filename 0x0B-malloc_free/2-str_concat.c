@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * str_concat - function to concatenate two strings
@@ -17,7 +17,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL || s2 == NULL)
 	{
-		_putchar ('');
+		return ("");
 	}
 
 	for (len = 0; s1[len]; len++)
@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (ptr == NULL)
 		return (NULL);
-	return (*ptr);
+	return (ptr);
 
 
 
