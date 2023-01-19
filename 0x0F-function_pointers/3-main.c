@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int a, b;
-	int (*operation)(int, int);
+	char *operator;
 
 	if (argc != 4)
 	{
@@ -23,23 +23,23 @@ int main(int argc, char *argv[])
 
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
+	operator = argv[2];
 
 
-	if (argv[2][1])
+	if (get_op_func(operator) == NULL || operator[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	operation = get_op_func(argv[2]);
 
-	if (operation == NULL)
+	if ((*operator == 47 || *operator == 37) && b == 0)
 	{
 		printf("Error\n");
-		exit(99);
+		exit(100);
 	}
 
-	printf("%d\n", operation(a, b));
+	printf("%d\n", get_op_func(operator)(a, b));
 	return (0);
 
 }
