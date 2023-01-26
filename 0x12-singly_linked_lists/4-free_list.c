@@ -3,7 +3,7 @@
 /**
  * free_list - free single linked list
  * @head: pointer to first node
- * 
+ *
  */
 
 void free_list(list_t *head)
