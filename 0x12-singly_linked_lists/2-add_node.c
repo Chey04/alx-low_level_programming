@@ -10,7 +10,7 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
-	list_t str_len = 0;
+	size_t str_len = 0;
 
 	if (str == NULL)
 		str_len = 0;
@@ -35,5 +35,5 @@ list_t *add_node(list_t **head, const char *str)
 	new_node->len = str_len;
 	*head = new_node;
 
-	return(*head);
+	return (*head);
 }

@@ -1,13 +1,13 @@
 #include "lists.h"
 
 /**
- *  * add_node_end - adds a node at the end of the linked list
- *   *
- *    * @head: pointer to the first node of the list
- *     * @str: string to add
- *      *
- *       * Return: NULL if it fails / starting addr of the list
- *       */
+ * add_node_end - adds a node at the end of the linked list
+ * 
+ * @head: pointer to the first node of the list
+ * @str: string to add
+ *
+ * Return: NULL if it fails / starting addr of the list
+ */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -17,7 +17,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (str == NULL)
 		str_len = 0;
 
-		/*count length of string*/
+
 	while (str[str_len] != '\0')
 		str_len++;
 
