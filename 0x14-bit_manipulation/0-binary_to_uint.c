@@ -6,7 +6,6 @@
  * Return: the unsigned int, 0 if string is not 1 or 0
  * or NULL
  */
-int power(unsigned int x, unsigned int y);
 
 unsigned int binary_to_uint(const char *b)
 {
