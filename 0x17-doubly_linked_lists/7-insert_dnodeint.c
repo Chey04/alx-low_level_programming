@@ -3,7 +3,7 @@
 /**
  * insert_dnodeint_at_index - fucntion to insert node at index
  * @h: begining of list
- * @int: node data
+ * @n: node data
  * @idx: insertion point
  * Return: address of new node or NULL
  */

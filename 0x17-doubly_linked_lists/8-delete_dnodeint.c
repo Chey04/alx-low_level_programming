@@ -29,7 +29,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		current = current->next;
 
 	if (current == NULL)
-		return -1;
+		return (-1);
 
 	temp = current->prev;
 	temp->next = current->next;
