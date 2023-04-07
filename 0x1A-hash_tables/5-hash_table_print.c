@@ -2,7 +2,7 @@
 
 /**
  * hash_table_print - function to print out all contents
- * 			of a hash table
+ *			of a hash table
  * @ht: hash table
  */
 
@@ -23,17 +23,18 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			if (flag == 1)
 				printf(", ");
-		}
-		newnode = ht->array[i];
 
-		while (newnode != NULL)
-		{
-			printf("'%s' : '%s'", newnode->key, newnode->value);
-			newnode = newnode->next;
-			if (newnode != NULL)
-				printf(", ");
+			newnode = ht->array[i];
+
+			while (newnode != NULL)
+			{
+				printf("'%s' : '%s'", newnode->key, newnode->value);
+				newnode = newnode->next;
+				if (newnode != NULL)
+					printf(", ");
+			}
+			flag = 1;
 		}
-		flag = 1;
 	}
 	printf("}\n");
 

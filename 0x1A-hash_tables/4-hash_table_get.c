@@ -2,7 +2,7 @@
 
 /**
  * hash_table_get - function to retrieve value associated
- * 			with key in hash table
+ *			with key in hash table
  * @ht: hash table
  * @key: key
  * Return: key value or NULL
@@ -19,7 +19,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	index = key_index((const unsigned char *)key, ht->size);
 
 	if (index >= ht->size)
-		return(NULL);
+		return (NULL);
 
 	newnode = ht->array[index];
 
@@ -28,10 +28,8 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		newnode = newnode->next;
 	}
 
-	/*if (newnode == NULL)
+	if (newnode == NULL)
 		return (NULL);
 	return (newnode->value);
-*/
-	return ((newnode == NULL) ? NULL : newnode->value);
 
 }
