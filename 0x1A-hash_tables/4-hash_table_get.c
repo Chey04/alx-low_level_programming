@@ -23,14 +23,15 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	newnode = ht->array[index];
 
-	while (newnode && strcmp(node->key, key) != 0)
+	while (newnode && strcmp(newnode->key, key) != 0)
 	{
 		newnode = newnode->next;
 	}
 
-	if (newnode == NULL)
+	/*if (newnode == NULL)
 		return (NULL);
-	return (node->value);
-
+	return (newnode->value);
+*/
+	return ((newnode == NULL) ? NULL : newnode->value);
 
 }
